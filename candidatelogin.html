@@ -1,0 +1,79 @@
+<html>
+<head>
+	<title>Candidate Login</title>
+	<link rel="stylesheet" href="login.css">
+	<style>
+		*{
+			margin: 0;
+		}
+		
+		.banner{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(86, 95, 94, 0.75),rgba(87, 95, 95, 0.75)),url(bg.jpg); 
+    background-size: cover;
+    background-position: center;
+     }
+	 h1 {
+			text-align: center;
+			color:aliceblue;
+		}
+
+		form {
+			width: 25%;
+			margin: auto;
+			padding: 20px;
+			background-color: #c1ddf1;
+			border: 1px dotted #1d1a1a;
+		        border-radius: 10px;
+		}
+
+		input[type="text"], input[type="password"] {
+			width: 100%;
+			padding: 10px 20px;
+			margin: 15px 0;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			font-size: 16px;
+		}
+
+		input[type="submit"] {
+			background-color: #74d977;
+			width:80px;
+			color: white;
+			padding: 10px 8px;
+			border: 1px solid white;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+            margin: auto;
+                                   
+		}
+
+		input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+	<div class= "banner"><br>
+	<h1>Candidate Login</h1><br>
+	<form>
+		<label>Username</label>
+		<input type="text" id="username" name="username" required>
+
+		<label>Password</label>
+		<input type="password" id="password" name="password" required>
+       <a href="#" style="text-decoration: none;">forget password?</a> 
+        <div class="center">
+		<pre>                  <input type="submit" value="Login"></pre>
+        </div>   
+	</div>	
+	</form>
+</body>
+</html>
+
+
+
+

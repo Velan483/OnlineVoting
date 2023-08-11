@@ -1,0 +1,132 @@
+<html>
+<head>
+
+<style>
+    *{
+        margin: 0;
+    }
+   
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(220, 167, 167);
+  background-image: linear-gradient(rgba(88, 104, 102, 0.75),rgba(61, 73, 73, 0.75)),url(bg.jpg); 
+  background-size: auto;
+}
+h1{ padding-top: 20px;
+    text-align: center;
+    color:aliceblue;
+}
+form {
+			width: 50%;
+			margin: auto;
+			padding: 20px 48px 25px 48px;
+			border-radius: 10px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 16px;
+  margin: auto;
+  background-color: white;
+  margin: 15px 0 ;
+  border-radius: 20px;
+}
+
+
+input[type=text], input[type=password],input[type=number],input[type=file],input[type=date] {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 15px 0 ;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background: #f1f1f1;
+}
+.addr
+{
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background: #f1f1f1;
+}
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+
+input[type="submit"]:hover {
+			background-color: #45a049;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+    <h1>Candidate Registration</h1>
+
+<form>
+<div class="banner">
+  <div class="container">
+    <b style="color: rgb(205, 153, 233);">Please fill the form to create an account.</b>
+    <p></p><br>
+    <hr><br>
+    <label><b>Name</b></label>
+    <input type="text" placeholder="Enter Your Name"  name="name" required>
+    <label><b>DOB</b></label>
+   
+    <input type="date" placeholder="Enter your DOB"  name="dob" required><br>
+    
+    <label><b>Age</b></label>
+    <input type="number" placeholder="Enter your age"   name="age" min="18" max="100" required><br><br>
+    
+    <label><b>Gender</b></label><br>
+    <p></p><br>
+    <input type="radio"  name="gender" id="gender" value="male">&nbsp;<label>Male</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio"  name="gender" id="gender" value="female">&nbsp;<label>Female</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio"  name="gender" id="gender" value="others">&nbsp;<label>Others</label>  <p></p><br><br>
+    <label><b>Email</b></label>
+    <input type="text" placeholder="Enter Email"  name="email" required>
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password"  name="password" required>
+    <label ><b>Phone No</b></label>
+    <input type="text" placeholder="Enter you phone number"  name="ph" required><br>
+    <label><b>Address</b></label>
+    <input type="text" placeholder="Enter Current Address"  name="address" required>
+    <p></p><br>
+    <label ><b>Party Name</b></label><br> 
+    <input type="text" placeholder="Enter Party Name"  name="party name" required>
+    <p></p><br>
+    <label ><b>Candidate Photo</b></label><br>
+    <input type="file" placeholder=" Attach Photo"  name="cadidatephoto" required><br>
+     <p></p><br>
+     <label ><b>Party Symbol </b></label><br>
+    <input type="file" placeholder="Attach Symbol"  name="Symbol" required><br><br>
+    <label><b>Aadhaar Card</b></label><br>
+    <input type="file" placeholder="Attach your Aadhaar Card"  name="aadhaar" required><br>
+    <button type="submit" class="registerbtn">Register</button>
+    <p></p><br>
+    <p>Already have an account? <a href="candidatelogin.html">Sign in</a>.</p>
+  </div>
+</div>
+  
+</form>
+
+</body>
+</html>
